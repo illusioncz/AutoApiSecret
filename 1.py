@@ -1,4 +1,4 @@
-
+# -*- coding: UTF-8 -*-
 import requests as req
 import json,sys,time
 #先注册azure应用,确保应用有以下权限:
