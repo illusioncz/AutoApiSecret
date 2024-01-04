@@ -1,5 +1,5 @@
 #自动调用api保活，加密版
-name: Auto E5sub Task
+name: CZ sub Task
 
 on: 
   release:
@@ -8,7 +8,7 @@ on:
     branches: 
       - master
   schedule:
-    - cron: '12 */6 * * 1-5'
+    - cron: '0 5 * * *'
   watch:
     types: [started]
    
@@ -47,7 +47,7 @@ jobs:
         rm -f configkey.txt    
     - name: Commit #上传新的refresh_token到仓库
       run: |
-        git config --global user.email illusion@email.cn
+        git config --global user.email illusion@qq.com
         git config --global user.name illusioner
         git add .
         git commit -m "update new refresh_token" -a
